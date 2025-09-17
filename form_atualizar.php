@@ -2,6 +2,10 @@
     include 'cabecalho.php';
 ?>
 
+    <head>
+        <link rel="stylesheet" href="atualizar.css">
+    </head>
+
 <body>
     <div class="container">
         <h2>ATUALIZAÇÃO DE PRODUTO</h2>

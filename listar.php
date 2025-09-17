@@ -2,6 +2,10 @@
     include 'cabecalho.php';
 ?>
 
+    <head>
+        <link rel="stylesheet" href="listar.css">
+    </head>
+
 <body>
     <div class="container">
         <h1>Sistema Web com CRUD</h1>
