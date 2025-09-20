@@ -1,40 +1,83 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle at top, #1e1e2f, #12121c);
-    color: #eaeaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000000, #0a0a0a);
+    color: #00e5ff; /* Azul principal */
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 50px;
-    border-radius: 20px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    max-width: 650px;
-    width: 90%;
+    background: #111111;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow:
+        0 0 10px #00e5ff,
+        0 0 20px #00ccff,
+        0 0 30px #0066ff;
+    max-width: 1000px;
+    margin: 40px auto;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 2px solid #00e5ff;
 }
 
-h1 {
-    font-size: 2.4rem;
+.container h1 {
+    font-size: 1.8rem;
     color: #00e5ff;
-    margin-bottom: 12px;
-    text-shadow: 0 0 10px rgba(0,229,255,0.4);
+    margin-bottom: 10px;
+    text-shadow:
+        0 0 5px #00e5ff,
+        0 0 10px #00ccff,
+        0 0 20px #0066ff;
 }
 
-h2 {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: #bbb;
-    margin-bottom: 30px;
+.container h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #00ccff;
+    margin-bottom: 25px;
+    text-shadow:
+        0 0 3px #00ccff,
+        0 0 7px #0066ff;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #111;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+.table thead {
+    background-color: #001133;
+    color: #00e5ff;
+}
+
+.table thead th {
+    padding: 12px;
+    text-align: center;
+    text-shadow: 0 0 3px #00e5ff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #001a33;
+}
+
+.table tbody tr:hover {
+    background-color: #003366;
+    transition: background 0.3s ease;
+}
+
+.table tbody td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #00ccff;
+    text-shadow: 0 0 2px #00ccff;
+    border-bottom: 1px solid #002244;
 }
 
 .btn-group a {
